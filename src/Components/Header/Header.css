@@ -1,0 +1,15 @@
+.header{
+    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-16 fixed w-full
+}
+.logo{
+    @apply font-bold text-lg text-yellow-500
+}
+.hamburgerMenuIcon{
+    @apply text-xl
+}
+.navLinksDesktop{
+    @apply space-x-4 pt-20
+}
+.navLinksMobile{
+    @apply flex flex-col space-y-5 pt-20 px-6 h-screen bg-white
+}
