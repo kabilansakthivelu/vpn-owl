@@ -1,3 +1,6 @@
+.contactSection{
+    @apply mt-1 bg-black rounded-lg p-6 md:p-10 lg:p-16
+}
 .contactInfo{
     @apply flex flex-col md:flex-row text-white items-center justify-around mx-4 md:mx-8 lg:mx-12 pt-4 space-y-4 leading-8
 }

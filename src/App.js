@@ -1,3 +1,4 @@
+import {useRef, useState} from 'react';
 import Header from './Components/Header/Header';
 import Teaser from './Components/Teaser/Teaser';
 import About from './Components/About/About';
@@ -9,10 +10,37 @@ import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
+
+  const [hexCodeEntered, setHexCodeEntered] = useState("#FFFFFF");
+
+  const hexRefPara = useRef();
+  const hexRefInput = useRef();
+  const bgColor = useRef();
+
+  const enterHexCode = () =>{
+    hexRefPara.current.style.display = "none";
+    hexRefInput.current.style.display = "block";
+    hexRefInput.current.focus();
+  }
+
+  const changeColor = (e) =>{
+    setHexCodeEntered(e.target.value);
+    bgColor.current.style.backgroundColor = e.target.value;
+  }
+
+  const returnToHexPara = () =>{
+    hexRefPara.current.style.display = "block";
+    hexRefInput.current.style.display = "none";
+  }
+
   return (
-    <div className="App">
+    <div className="App" ref={bgColor}>
       <Header/>
       <div className="content">
+      <div className="hexBox" onMouseEnter={enterHexCode} onMouseLeave={returnToHexPara}>
+      <input ref={hexRefInput} type="text" maxLength="7" className="hexInput" value={hexCodeEntered} onChange={(e)=>{changeColor(e)}}/>
+      <p ref={hexRefPara} className="hexCode">{hexCodeEntered || "#FFFFFF"}</p>
+      </div>
       <Teaser/>
       <About/>
       <Features/>

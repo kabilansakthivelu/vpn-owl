@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {Link} from 'react-scroll';
 import {GiHamburgerMenu} from 'react-icons/gi';
-import {AiOutlineClose} from 'react-icons/ai';
+import {AiFillCloseCircle} from 'react-icons/ai';
 import './Header.css';
 
 const Header = () => {
@@ -9,6 +9,8 @@ const Header = () => {
 const [isMobileView, setIsMobileView] = useState(false);
 
 const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+const [showBanner, setShowBanner] = useState(true);
 
 // checkSize function for monitoring screen size
 
@@ -29,6 +31,28 @@ useEffect(()=>{
     })
 }, [])
 
+  let greetingText;
+
+  let time = new Date().getHours();
+  if((time > 4) && (time < 12)){
+    greetingText = "Good Morning";
+  }
+  else if((time >= 12) && (time < 5)){
+    greetingText = "Good Afternoon";
+  }
+  else if((time >= 5) && (time < 7)){
+    greetingText = "Good Evening";
+  }
+  else{
+    greetingText = "Good Night";
+  }
+
+useEffect(()=>{
+  setTimeout(() => {
+    setShowBanner(false);
+  }, 10000);
+}, [])
+
 const showMenu = () =>{
     setIsMenuOpen(!isMenuOpen);
 }
@@ -41,12 +65,22 @@ const menuClose = () =>{
   setIsMenuOpen(false);
 }
 
+const closeBanner = () =>{
+  setShowBanner(false);
+}
+
   return (
   <>
   <div className="header">
   <Link to="teaser" offset={-67} smooth={true} className="logo">VPN Owl</Link>
+  {showBanner && 
+  <div className="banner">
+  <AiFillCloseCircle className="bannerCloseIcon" onClick={closeBanner}/>
+  <p className="greetingText">{greetingText}, Guest!</p>
+  </div>
+  }
   <div onClick={showMenu} className="hamburgerMenuIcon">
-  {isMobileView && (isMenuOpen ? <AiOutlineClose/> : <GiHamburgerMenu/>)}
+  {isMobileView && (isMenuOpen ? <AiFillCloseCircle/> : <GiHamburgerMenu/>)}
   </div>
 
 {/* Navbar menu for Desktop enclosed within Header */}

@@ -1,8 +1,8 @@
 .header{
-    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-24 w-full fixed
+    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-16 lg:px-24 w-full fixed
 }
 .logo{
-    @apply font-bold text-lg text-yellow-500 cursor-pointer
+    @apply font-bold text-sm sm:text-lg text-yellow-500 cursor-pointer
 }
 .hamburgerMenuIcon{
     @apply text-xl
@@ -15,4 +15,13 @@
 }
 .navLinksHide{
     @apply hidden
+}
+.banner{
+    @apply bg-yellow-500 text-black h-full mr-1 lg:ml-32 xl:ml-60 rounded-b-3xl z-20 w-52 sm:w-64 xl:w-96 
+}
+.greetingText{
+    @apply px-1 sm:px-10 md:px-8 xl:px-20 text-sm lg:text-base xl:text-base font-semibold xl:font-bold mt-5 text-center
+}
+.bannerCloseIcon{
+    @apply float-right -right-0 -top-6 text-xl cursor-pointer mt-0
 }

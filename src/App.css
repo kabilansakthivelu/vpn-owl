@@ -1,3 +1,12 @@
 .content{
     @apply px-6 md:px-12 lg:px-24
 }
+.hexBox{
+    @apply bottom-20 right-10 md:right-14 lg:right-28 p-4 md:p-5 xl:bottom-24 xl:right-32 fixed bg-yellow-500 rounded-lg cursor-pointer
+}
+.hexCode{
+    @apply font-bold text-lg
+}
+.hexInput{
+    @apply w-20 hidden 
+}
