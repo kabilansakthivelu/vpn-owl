@@ -1,5 +1,5 @@
 .header{
-    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-16 fixed w-full
+    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-24 fixed w-full
 }
 .logo{
     @apply font-bold text-lg text-yellow-500 cursor-pointer

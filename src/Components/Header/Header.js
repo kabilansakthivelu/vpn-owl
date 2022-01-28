@@ -53,6 +53,7 @@ navLinks = isMobileView ? (isMenuOpen ? "navLinksMobile" : "navLinksHide") : "";
   <a href="#">Reviews</a>
   <a href="#">Contact</a>
   </nav>
+
   </div>
 
 {/* Navbar menu for mobile displayed as hamburger menu*/}
