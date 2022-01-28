@@ -4,6 +4,7 @@ import About from './Components/About/About';
 import Features from './Components/Features/Features';
 import Gallery from './Components/Gallery/Gallery';
 import Reviews from './Components/Reviews/Reviews';
+import Contact from './Components/Contact/Contact';
 import './App.css';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Features/>
       <Gallery/>
       <Reviews/>
+      <Contact/>
       </div>
     </div>
   );
