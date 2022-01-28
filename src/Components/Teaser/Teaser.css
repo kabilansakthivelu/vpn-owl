@@ -5,5 +5,5 @@
     @apply w-3/5 sm:w-2/5 md:w-2/6 h-full
 }
 .caption{
-    @apply text-black text-base md:text-xl lg:text-2xl font-bold px-6 md:px-16 mt-4 md:mt-0 pb-4
+    @apply text-black text-base md:text-xl lg:text-2xl font-bold px-6 md:px-16 mt-4 md:mt-0 pb-4 text-center
 }
