@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import {Link} from 'react-scroll';
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {AiOutlineClose} from 'react-icons/ai';
 import './Header.css';
@@ -36,10 +37,14 @@ let navLinks;
 
 navLinks = isMobileView ? (isMenuOpen ? "navLinksMobile" : "navLinksHide") : "";
 
+const menuClose = () =>{
+  setIsMenuOpen(false);
+}
+
   return (
   <>
   <div className="header">
-  <h1 className="logo">VPN Owl</h1>
+  <Link to="teaser" offset={-67} smooth={true} className="logo">VPN Owl</Link>
   <div onClick={showMenu} className="hamburgerMenuIcon">
   {isMobileView && (isMenuOpen ? <AiOutlineClose/> : <GiHamburgerMenu/>)}
   </div>
@@ -47,11 +52,11 @@ navLinks = isMobileView ? (isMenuOpen ? "navLinksMobile" : "navLinksHide") : "";
 {/* Navbar menu for Desktop enclosed within Header */}
 
   <nav className="navLinksDesktop">
-  <a href="#">About</a>
-  <a href="#">Features</a>
-  <a href="#">Gallery</a>
-  <a href="#">Reviews</a>
-  <a href="#">Contact</a>
+  <Link to="about" offset={-67} smooth={true}>About</Link>
+  <Link to="features" offset={-67} smooth={true}>Features</Link>
+  <Link to="gallery" offset={-67} smooth={true}>Gallery</Link>
+  <Link to="reviews" offset={-67} smooth={true}>Reviews</Link>
+  <Link to="contact" offset={-67} smooth={true}>Contact</Link>
   </nav>
 
   </div>
@@ -59,11 +64,11 @@ navLinks = isMobileView ? (isMenuOpen ? "navLinksMobile" : "navLinksHide") : "";
 {/* Navbar menu for mobile displayed as hamburger menu*/}
 
   <nav className={navLinks}>
-  <a href="#">About</a>
-  <a href="#">Features</a>
-  <a href="#">Gallery</a>
-  <a href="#">Reviews</a>
-  <a href="#">Contact</a>
+  <Link to="about" offset={-67} smooth={true} onClick={menuClose}>About</Link>
+  <Link to="features" offset={-67} smooth={true} onClick={menuClose}>Features</Link>
+  <Link to="gallery" offset={-67} smooth={true} onClick={menuClose}>Gallery</Link>
+  <Link to="reviews" offset={-67} smooth={true} onClick={menuClose}>Reviews</Link>
+  <Link to="contact" offset={-67} smooth={true} onClick={menuClose}>Contact</Link>
   </nav>
   </>
   );

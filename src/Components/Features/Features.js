@@ -4,7 +4,7 @@ import './Features.css';
 
 const Features = () => {
   return (
-<div className="section">
+<div className="section" id="features">
 <h1 className="sectionTitle">Features</h1>
 <div className="featuresSubSection">
 <h1 className="subSectionTitle">Main features include:</h1>

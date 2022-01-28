@@ -18,7 +18,7 @@ const images = [
     {id:6, url: image6}];
     
   return (
-  <div className="section">
+  <div className="section" id="gallery">
   <h1 className="sectionTitle">Gallery</h1>
   <div className="gallery">
   {images.map((item)=>{

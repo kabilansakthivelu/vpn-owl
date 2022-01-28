@@ -1,5 +1,5 @@
 .header{
-    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-24 fixed w-full
+    @apply bg-black text-white h-16 flex items-center justify-between px-8 md:px-24 w-full fixed
 }
 .logo{
     @apply font-bold text-lg text-yellow-500 cursor-pointer
@@ -8,10 +8,10 @@
     @apply text-xl
 }
 .navLinksDesktop{
-    @apply space-x-4 hidden md:block
+    @apply space-x-4 hidden md:block cursor-pointer
 }
 .navLinksMobile{
-    @apply flex flex-col space-y-5 pt-20 px-6 h-screen bg-white md:hidden
+    @apply flex flex-col space-y-5 mt-16 px-6 h-screen md:hidden text-white font-semibold fixed w-full pt-6 bg-gray-500
 }
 .navLinksHide{
     @apply hidden

@@ -1,5 +1,5 @@
 .section{
-    @apply mt-4 bg-black rounded-lg p-6 md:p-10 lg:p-16
+    @apply mt-1 bg-black rounded-lg p-6 md:p-10 lg:p-16
 }
 .sectionTitle{
     @apply text-yellow-500 font-semibold text-lg

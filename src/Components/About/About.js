@@ -3,7 +3,7 @@ import './About.css';
 
 const About = () => {
   return (
-  <div className="section">
+  <div className="section" id="about">
   <h1 className="sectionTitle">About</h1>
   <ul>
   <li className="about"><b>VPN Owl</b> keeps your online activity safe, secure, and private - <b> for your eyes only!. </b> Trusted by 80+ million users worldwide for VPN <b>stability, speed, and security.</b></li>

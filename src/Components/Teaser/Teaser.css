@@ -1,5 +1,5 @@
 .teaser{
-    @apply pt-20 md:mt-12 w-full h-2/4 flex flex-col md:flex-row items-center border-2 rounded-lg md:p-4 shadow-2xl md:pt-4 bg-white
+    @apply pt-24 md:mt-12 w-full h-2/4 flex flex-col md:flex-row items-center border-2 rounded-lg md:p-4 shadow-2xl md:pt-4 bg-white
 }
 .teaserImage{
     @apply w-3/5 sm:w-2/5 md:w-2/6 h-full

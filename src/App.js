@@ -5,6 +5,7 @@ import Features from './Components/Features/Features';
 import Gallery from './Components/Gallery/Gallery';
 import Reviews from './Components/Reviews/Reviews';
 import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Reviews/>
       <Contact/>
       </div>
+      <Footer/>
     </div>
   );
 }

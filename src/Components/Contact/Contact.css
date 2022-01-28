@@ -1,5 +1,5 @@
 .contactInfo{
-    @apply flex flex-row text-white items-center justify-between mx-4 md:mx-8 lg:mx-12 pt-4 space-y-4 leading-8
+    @apply flex flex-col md:flex-row text-white items-center justify-around mx-4 md:mx-8 lg:mx-12 pt-4 space-y-4 leading-8
 }
 .moreContactInfo{
     @apply flex items-center

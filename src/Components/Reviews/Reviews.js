@@ -56,7 +56,7 @@ useEffect(()=>{
 }, [idToBeDisplayed])
 
 return (
-<div className="section">
+<div className="section" id="reviews">
 <h1 className="sectionTitle">Reviews</h1>
 <div className="reviewSection">
 <AiFillCaretLeft className="swipeIcons" onClick={previousReview}/>
