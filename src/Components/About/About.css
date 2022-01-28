@@ -1,0 +1,9 @@
+.aboutSection{
+    @apply mt-4 bg-black rounded-lg p-6 md:p-10 lg:p-16
+}
+.sectionTitle{
+    @apply text-yellow-500 font-semibold text-lg
+}
+.about{
+    @apply text-white list-disc mx-4 md:mx-8 lg:mx-12 pt-4
+} 
