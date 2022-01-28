@@ -3,6 +3,7 @@ import Teaser from './Components/Teaser/Teaser';
 import About from './Components/About/About';
 import Features from './Components/Features/Features';
 import Gallery from './Components/Gallery/Gallery';
+import Reviews from './Components/Reviews/Reviews';
 import './App.css';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <About/>
       <Features/>
       <Gallery/>
+      <Reviews/>
       </div>
     </div>
   );

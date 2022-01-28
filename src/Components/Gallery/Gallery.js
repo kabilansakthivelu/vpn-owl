@@ -24,7 +24,7 @@ const images = [
   {images.map((item)=>{
       return (
           <div key={item.id}>
-          <img src={item.url} className="image"/>
+          <img src={item.url} style={{width:"13em", height:"18em"}} className="image"/>
           </div>
       )
   })}
