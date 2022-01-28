@@ -9,6 +9,8 @@ const [isMobileView, setIsMobileView] = useState(false);
 
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+// checkSize function for monitoring screen size
+
 const checkSize = () =>{
     if(window.innerWidth < 768){
         setIsMobileView(true);
@@ -32,7 +34,7 @@ const showMenu = () =>{
 
 let navLinks;
 
-navLinks = (isMobileView ? (isMenuOpen ? "navLinksMobile" : "") : "navLinksDesktop");
+navLinks = isMobileView ? (isMenuOpen ? "navLinksMobile" : "navLinksHide") : "";
 
   return (
   <>
@@ -41,7 +43,20 @@ navLinks = (isMobileView ? (isMenuOpen ? "navLinksMobile" : "") : "navLinksDeskt
   <div onClick={showMenu} className="hamburgerMenuIcon">
   {isMobileView && (isMenuOpen ? <AiOutlineClose/> : <GiHamburgerMenu/>)}
   </div>
+
+{/* Navbar menu for Desktop enclosed within Header */}
+
+  <nav className="navLinksDesktop">
+  <a href="#">About</a>
+  <a href="#">Features</a>
+  <a href="#">Gallery</a>
+  <a href="#">Reviews</a>
+  <a href="#">Contact</a>
+  </nav>
   </div>
+
+{/* Navbar menu for mobile displayed as hamburger menu*/}
+
   <nav className={navLinks}>
   <a href="#">About</a>
   <a href="#">Features</a>
