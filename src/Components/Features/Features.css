@@ -1,0 +1,12 @@
+.subSectionTitle{
+    @apply text-yellow-500 text-lg
+}
+.features{
+    @apply text-white flex flex-row items-center py-1
+}
+.starIcon{
+    @apply mr-3 text-xs md:text-sm lg:text-base
+}
+.featuresSubSection{
+    @apply mx-4 md:mx-8 lg:mx-12 pt-4
+}

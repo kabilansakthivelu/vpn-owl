@@ -1,6 +1,7 @@
 import Header from './Components/Header/Header';
 import Teaser from './Components/Teaser/Teaser';
 import About from './Components/About/About';
+import Features from './Components/Features/Features';
 import './App.css';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div className="content">
       <Teaser/>
       <About/>
+      <Features/>
       </div>
     </div>
   );
