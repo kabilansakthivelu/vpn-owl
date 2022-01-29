@@ -37,10 +37,10 @@ useEffect(()=>{
   if((time > 4) && (time < 12)){
     greetingText = "Good Morning";
   }
-  else if((time >= 12) && (time < 5)){
+  else if((time >= 12) && (time < 17)){
     greetingText = "Good Afternoon";
   }
-  else if((time >= 5) && (time < 7)){
+  else if((time >= 17) && (time <= 19)){
     greetingText = "Good Evening";
   }
   else{

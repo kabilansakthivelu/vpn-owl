@@ -2,7 +2,7 @@
     @apply text-yellow-500 text-lg
 }
 .features{
-    @apply text-white flex flex-row items-center py-1
+    @apply text-white flex flex-row items-center py-1 list-decimal
 }
 .starIcon{
     @apply mr-3 text-xs md:text-sm lg:text-base
