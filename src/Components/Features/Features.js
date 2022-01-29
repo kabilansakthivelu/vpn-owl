@@ -4,8 +4,10 @@ import './Features.css';
 
 const Features = () => {
   return (
+    
 <div className="section" id="features">
 <h1 className="sectionTitle">Features</h1>
+
 <div className="featuresSubSection">
 <h1 className="subSectionTitle">Main features include:</h1>
 <ul>
@@ -17,6 +19,7 @@ const Features = () => {
 <li className="features"><TiStarburst className="starIcon"/> No user data logs</li>
 </ul>
 </div>
+
 <div className="featuresSubSection">
 <h1 className="subSectionTitle">Additional Premium features:</h1>
 <ul>
@@ -28,6 +31,7 @@ const Features = () => {
 <li className="features"><TiStarburst className="starIcon"/> 24x7 premium support</li>
 </ul>
 </div>
+
 </div>
 );
 };

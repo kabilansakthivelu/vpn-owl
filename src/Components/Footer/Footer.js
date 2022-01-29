@@ -5,12 +5,16 @@ import './Footer.css';
 const Footer = () => {
 return (
 <div className="footer">
+
+{/* Social Media Icons */}
+
 <div className="socialMediaIcons">
 <AiFillLinkedin className="footerIcon"/>
 <AiFillFacebook className="footerIcon"/>
 <AiOutlineTwitter className="footerIcon"/>
 <AiFillGithub className="footerIcon"/>
 </div>
+
 <p className="copyrightsText">&copy; 2022 All rights reserved</p>
 </div>
 );

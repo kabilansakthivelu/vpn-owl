@@ -17,16 +17,22 @@ function App() {
   const hexRefInput = useRef();
   const bgColor = useRef();
 
+  //On hovering the floating button, it will change to 'input' element
+
   const enterHexCode = () =>{
     hexRefPara.current.style.display = "none";
     hexRefInput.current.style.display = "block";
     hexRefInput.current.focus();
   }
 
+  //Changing background color
+
   const changeColor = (e) =>{
     setHexCodeEntered(e.target.value);
     bgColor.current.style.backgroundColor = e.target.value;
   }
+
+  //On leaving the floating button, it will change back to 'p' element
 
   const returnToHexPara = () =>{
     hexRefPara.current.style.display = "block";
@@ -37,10 +43,14 @@ function App() {
     <div className="App" ref={bgColor}>
       <Header/>
       <div className="content">
+
+      {/* Greeting Banner */}
+
       <div className="hexBox" onMouseEnter={enterHexCode} onMouseLeave={returnToHexPara}>
       <input ref={hexRefInput} type="text" maxLength="7" className="hexInput" value={hexCodeEntered} onChange={(e)=>{changeColor(e)}}/>
       <p ref={hexRefPara} className="hexCode">{hexCodeEntered || "#FFFFFF"}</p>
       </div>
+      
       <Teaser/>
       <About/>
       <Features/>

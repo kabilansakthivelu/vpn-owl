@@ -22,6 +22,8 @@ const reviewContent = [{
     author: "Guest User",
     }]
 
+// On clicking 'Previous' icon in carousel
+
 const previousReview = () =>{
     if(idToBeDisplayed > 0){
     setIdToBeDisplayed(idToBeDisplayed-1);
@@ -30,6 +32,8 @@ const previousReview = () =>{
     setIdToBeDisplayed(2);
     }
 }
+
+// On clicking 'Next' icon in carousel
 
 const nextReview = () =>{
     if(idToBeDisplayed < 2){
@@ -58,6 +62,9 @@ useEffect(()=>{
 return (
 <div className="section" id="reviews">
 <h1 className="sectionTitle">Reviews</h1>
+
+{/* Carousel for displaying reviews */}
+
 <div className="reviewSection">
 <AiFillCaretLeft className="swipeIcons" onClick={previousReview}/>
 <div className="review">
@@ -66,6 +73,7 @@ return (
 </div>
 <AiFillCaretRight className="swipeIcons" onClick={nextReview}/>
 </div>
+
 </div>
   );
 };
