@@ -11,7 +11,7 @@
     @apply space-x-4 hidden md:block cursor-pointer
 }
 .navLinksMobile{
-    @apply flex flex-col space-y-5 mt-16 px-6 h-screen md:hidden text-white font-semibold fixed w-full pt-6 bg-gray-500
+    @apply flex flex-col space-y-5 mt-16 px-6 h-screen md:hidden text-white font-semibold fixed w-full pt-6 bg-gray-500 z-20
 }
 .navLinksHide{
     @apply hidden
